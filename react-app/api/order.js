@@ -1,3 +1,4 @@
+/* order.js Vercel serverless function */
 import { parseString } from 'xml2js';
 
 export default function handler(req, res) {
