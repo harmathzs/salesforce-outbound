@@ -7,6 +7,10 @@ export default function handler(req, res) {
     return;
   }
 
+  // log request
+  const body = req.body
+  console.log('request body', body)
+
   let xml = '';
   req.on('data', chunk => { xml += chunk; });
   req.on('end', () => {
